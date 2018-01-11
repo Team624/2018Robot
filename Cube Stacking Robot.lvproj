@@ -325,6 +325,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Robot Code" Type="Folder" URL="../Robot Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Auton Command Cluster.ctl" Type="VI" URL="../Common Code/Auton Command Cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -739,8 +740,10 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesTimebaseConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesTimebaseConstants.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Auton File Lists.ctl" Type="VI" URL="../../../2017Robot/SteamyRobot/Common Code/Auton File Lists.ctl"/>
 			<Item Name="Axes Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Axes Cluster.ctl"/>
 			<Item Name="Button Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Button Cluster.ctl"/>
+			<Item Name="Change Detect Boolean.vi" Type="VI" URL="../Common Code/Utilities/Change Detect Boolean.vi"/>
 			<Item Name="D-Pad.ctl" Type="VI" URL="../Common Code/Gamepads/D-Pad.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -760,6 +763,7 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="TimeManager.vi" Type="VI" URL="../Common Code/Utilities/TimeManager.vi"/>
 			<Item Name="Unpack Gamepad.vi" Type="VI" URL="../Common Code/Gamepads/Unpack Gamepad.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
