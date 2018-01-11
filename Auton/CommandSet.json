@@ -1,0 +1,24 @@
+[
+		{
+		"name":"wait",
+		"id":0,
+		"desc":"wait for specified time",
+		"subs": [
+				{"name":"maxTime", "id":0, "desc":"wait duration (ms). (0 = forever)"}
+		]
+		
+	},
+	
+	{
+		
+	}
+
+
+
+
+
+
+
+
+
+]
