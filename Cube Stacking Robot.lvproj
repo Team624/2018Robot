@@ -251,6 +251,8 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="FeederPower.ctl" Type="VI" URL="../Robot Code/Intake/FeederPower.ctl"/>
+			<Item Name="IntakeStatusCluster.ctl" Type="VI" URL="../Robot Code/Intake/IntakeStatusCluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
