@@ -251,6 +251,7 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Auton File Lists.ctl" Type="VI" URL="../../../2017Robot/SteamyRobot/Common Code/Auton File Lists.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -340,7 +341,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Robot Code" Type="Folder" URL="../Robot Code">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Auton Command Cluster.ctl" Type="VI" URL="../Common Code/Auton Command Cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -383,7 +383,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Field Data.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field Data.ctl"/>
 				<Item Name="Field ID.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field ID.ctl"/>
 				<Item Name="Field Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Field Type.ctl"/>
-<<<<<<< HEAD
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="FPGA_AIAverageBits.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIAverageBits.vi"/>
 				<Item Name="FPGA_AIChannel.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIChannel.ctl"/>
 				<Item Name="FPGA_AIDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AI/FPGA_AIDevRef.ctl"/>
@@ -408,9 +408,6 @@ AddOutputFilter chunkFilter
 				<Item Name="FPGA_CounterCtrSystemIndex.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Counter/FPGA_CounterCtrSystemIndex.ctl"/>
 				<Item Name="FPGA_CounterEncoderSourceConvertionLVSourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/CounterEncoderSourceConvertion/FPGA_CounterEncoderSourceConvertionLVSourceType.ctl"/>
 				<Item Name="FPGA_CounterEncoderSourceConvertionLVSourceTypeToFPGAType.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/CounterEncoderSourceConvertion/FPGA_CounterEncoderSourceConvertionLVSourceTypeToFPGAType.vi"/>
-=======
-				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
->>>>>>> Auton
 				<Item Name="FPGA_CounterERRInvalidResource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Counter/FPGA_CounterERRInvalidResource.vi"/>
 				<Item Name="FPGA_CounterEventCtrMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Counter/FPGA_CounterEventCtrMode.ctl"/>
 				<Item Name="FPGA_CounterOpen &amp; Configured.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Counter/FPGA_CounterOpen &amp; Configured.vi"/>
@@ -904,18 +901,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
-<<<<<<< HEAD
-=======
 			<Item Name="Auton File Lists.ctl" Type="VI" URL="../../../2017Robot/SteamyRobot/Common Code/Auton File Lists.ctl"/>
-			<Item Name="Axes Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Axes Cluster.ctl"/>
-			<Item Name="Button Cluster.ctl" Type="VI" URL="../Common Code/Gamepads/Button Cluster.ctl"/>
-			<Item Name="Change Detect Boolean.vi" Type="VI" URL="../Common Code/Utilities/Change Detect Boolean.vi"/>
-			<Item Name="Change Detect Double.vi" Type="VI" URL="../Common Code/Utilities/Change Detect Double.vi"/>
-			<Item Name="Change Detect Int.vi" Type="VI" URL="../Common Code/Utilities/Change Detect Int.vi"/>
-			<Item Name="Change Detect String.vi" Type="VI" URL="../Common Code/Utilities/Change Detect String.vi"/>
-			<Item Name="Change Detect.vi" Type="VI" URL="../Common Code/Utilities/Change Detect.vi"/>
-			<Item Name="D-Pad.ctl" Type="VI" URL="../Common Code/Gamepads/D-Pad.ctl"/>
->>>>>>> Auton
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -934,12 +920,7 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-<<<<<<< HEAD
 			<Item Name="Power and Diagnostic Data.ctl" Type="VI" URL="../Common Code/Power and Diagnostic Data.ctl"/>
-=======
-			<Item Name="TimeManager.vi" Type="VI" URL="../Common Code/Utilities/TimeManager.vi"/>
-			<Item Name="Unpack Gamepad.vi" Type="VI" URL="../Common Code/Gamepads/Unpack Gamepad.vi"/>
->>>>>>> Auton
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
