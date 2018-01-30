@@ -261,6 +261,9 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Elevator State.ctl" Type="VI" URL="../Common Code/Elevator State.ctl"/>
+			<Item Name="Elevator Mode.ctl" Type="VI" URL="../Common Code/Elevator Mode.ctl"/>
+			<Item Name="Elevator Status Cluster.ctl" Type="VI" URL="../Common Code/Elevator Status Cluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
