@@ -1,0 +1,2 @@
+﻿reset_encoders
+auto_drive ySpeed = 1 distanceTarget = 121 xSpeed = 0 headingTarget = 0.01 maxTime = 6000 async = no

@@ -1,0 +1,33 @@
+[
+	{
+		"name":"wait",
+		"id":0,
+		"desc":"wait x time",
+		"subs": [
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"}
+		]
+	},
+	
+	{
+		"name":"auto_drive",
+		"id":1,
+		"desc":"drive x distance",
+		"subs": [
+				{"name":"maxTime", "id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"distanceTarget", "id":1,"desc":"distance u wanna drive"},
+				{"name":"headingTarget","id":2,"desc":"heading to turn"},
+				{"name":"ySpeed","id":4,"desc":"atraight speed"},
+				{"name":"xSpeed","id":5,"desc":"turn speed"},
+				{"name":"async","id":7,"desc":"asynchronized? (no = 0; yes = 1)"},
+				
+		]
+	},
+	{
+		"name":"reset_encoders",
+		"id":5,
+		"desc":"reset the divetrain encoders",
+		"subs": [
+		]
+	},
+	
+	
