@@ -1,0 +1,7 @@
+﻿//Places one cube on left scale from left starting position
+reset_encoders
+auto_drive ySpeed = 1 distanceTarget = 200 xSpeed = .3 headingTarget = 0 maxTime = 6000 secondGear = 1 Async? = 0
+auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 0
+auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1
+auto_drive ySpeed = 1 distanceTarget = -50 xSpeed = 0 headingTarget = 0 maxTime = 3000 secondGear = 0 Async? = 1
+reset_encoders 

@@ -1,6 +1,0 @@
-﻿reset_encoders
-auto_drive ySpeed = 1 distanceTarget = 150 xSpeed = .3 headingTarget = 0.5 maxTime = 6000 secondGear = 1 Async? = 1
-auto_intake rollerPower = -0.75 intakeModeID = 2  
-reset_encoders 
-
-

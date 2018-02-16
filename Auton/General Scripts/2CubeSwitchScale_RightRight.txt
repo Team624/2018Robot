@@ -1,0 +1,14 @@
+﻿//Places one cube on right switch and one cube on right scale
+reset_encoders
+auto_drive ySpeed = 1  distanceTarget = 200 maxTime = 5000 secondGear = 1 Async? = 1
+auto_drive xSpeed = 1 distanceTarget = 200 headingTarget = -90 maxTime = 300 secondGear = 1 Async? = 1
+auto_drive ySpeed = 1  distanceTarget = 200 maxTime = 5000 secondGear = 1 Async? = 1
+auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 0
+auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1
+auto_elevator elevatorModeID = 1 elevatorStateID = 1
+auto_drive ySpeed = 1 xSpeed = 0.5 distanceTarget = 200 headingTarget = 0.05 maxTime = 3000 secondGear = 1 Async? = 0
+auto_intake rollerPower = 0.75 intakeModeID = 2  
+auto_drive ySpeed = 1 distanceTarget = 150 xSpeed = .3 headingTarget = 0.5 maxTime = 6000 secondGear = 1 Async? = 1
+auto_elevator elevatorModeID = 1 elevatorStateID = 4
+auto_intake rollerPower = 0.75 intakeModeID = 2 
+reset_encoders 
