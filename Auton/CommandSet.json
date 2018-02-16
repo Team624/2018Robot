@@ -8,12 +8,52 @@
 		]
 		
 	},
+	{
+		"name":"auto_drive",
+		"id":1,
+		"desc":"drive x distance",
+		"subs": [
+				{"name":"maxTime", "id":0, "desc":"wait duration (ms). (0 = forever)"},
+				{"name":"headingTarget", "id":2, "desc":"turn distance"},
+				{"name":"distanceTarget", "id":3, "desc":"desired distance"},
+				{"name":"xSpeed", "id":4, "desc":"turn speed"},
+				{"name":"ySpeed", "id":5, "desc":"straight drive speed"},
+				{"name":"Async?", "id":6, "desc":"0=false (asynced w other subsystem) 1=true(not asynced)"},
+				{"name":"secondGear", "id":7, "desc":"Switch to 2nd Gear(0-false, 1-true)"},
+		]
+		
+	},
+	
+	{
+		"name":"auto_intake",
+		"id":2,
+		"desc":"intake cube",
+		"subs": [
+				{"name":"rollerPower", "id":6, "desc":"intake arm roller power"},
+				{"name":"intakeModeID", "id":7, "desc":""},
+				{"name":"intakeStateID", "id":8, "desc":"turn speed"},
+				{"name":"manualClose", "id":4, "desc":"straight drive speed"},
+				{"name":"overrideLift?", "id":5, "desc":"0=false (asynced w other subsystem) 1=true(not asynced)"},
+				{"name":"overrideAngle?", "id":5, "desc":"0=false (asynced w other subsystem) 1=true(not asynced)"},
+		]
+	},
+	
+	
+	
+	
+	{
+		"name":"reset_encoders",
+		"id":5,
+		"desc":"reset the drive train encoders",
+		"subs": [
+				
+		]
+		
+	},
 	
 	{
 		
 	}
-
-
 
 
 
