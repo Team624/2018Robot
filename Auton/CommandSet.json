@@ -52,6 +52,15 @@
 	},
 	
 	{
+		"name":"auto_elevator",
+		"id":3,
+		"desc":"control elevator height",
+		"subs":[
+		{"name":"elevatorModeID", "id":0, "desc":"mode"},
+		{"name":"elevatorStateID", "id":1, "desc":"choose preset height"},
+		{"name":"manualSpeed", "id":2, "desc":"lift manual speed"},
+		{"name":"high", "id":3, "desc":""},
+		]
 		
 	}
 
