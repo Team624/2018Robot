@@ -8,6 +8,20 @@
 		]
 		
 	},
+	{
+		"name":"auto_drive",
+		"id":1,
+		"desc":"drive x distance",
+		"subs": [
+				{"name":"maxTime", "id":0, "desc":"wait duration (ms). (0 = forever)"},
+				{"name":"headingTarget", "id":2, "desc":"turn distance"},
+				{"name":"xSpeed", "id":3, "desc":"turn speed"},
+				{"name":"ySpeed", "id":4, "desc":"straight drive speed"},
+				{"name":"Async?", "id":5, "desc":"0=false (asynced w other subsystem) 1=true(not asynced)"},
+				{"name":"2nd Gear", "id":6, "desc":"Switch to 2nd Gear(0-false, 1-true)"},
+		]
+		
+	},
 	
 	{
 		
