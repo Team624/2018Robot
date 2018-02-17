@@ -1,14 +1,18 @@
 ﻿//Places one cube on right switch and one cube on right scale
 reset_encoders
-auto_drive ySpeed = 1  distanceTarget = 200 maxTime = 5000 secondGear = 1 Async? = 1
-auto_drive xSpeed = 1 distanceTarget = 200 headingTarget = -90 maxTime = 300 secondGear = 1 Async? = 1
-auto_drive ySpeed = 1  distanceTarget = 200 maxTime = 5000 secondGear = 1 Async? = 1
-auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 0
-auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1
-auto_elevator elevatorModeID = 1 elevatorStateID = 1
-auto_drive ySpeed = 1 xSpeed = 0.5 distanceTarget = 200 headingTarget = 0.05 maxTime = 3000 secondGear = 1 Async? = 0
-auto_intake rollerPower = 0.75 intakeModeID = 2  
-auto_drive ySpeed = 1 distanceTarget = 150 xSpeed = .3 headingTarget = 0.5 maxTime = 6000 secondGear = 1 Async? = 1
-auto_elevator elevatorModeID = 1 elevatorStateID = 4
-auto_intake rollerPower = 0.75 intakeModeID = 2 
+auto_drive ySpeed = 1  distanceTarget = 200 maxTime = 5000 secondGear = 1 Async? = 1 //drive forward towards other alliance station
+auto_drive xSpeed = 1 distanceTarget = 100 headingTarget = -90 maxTime = 300 secondGear = 1 Async? = 1 //turn left towards middle of field
+auto_drive xSpeed = 1 distanceTarget = 35 headingTarget = -90 maxTime = 300 secondGear = 1 Async? = 0 //turn parallel to switch
+auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 0 //put elevator at switch height
+auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1 //shoot cube
+auto_drive ySpeed = 1  distanceTarget = 20 maxTime = 5000 secondGear = 1 Async? = 1 //back up from switch
+auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 1 //drop elevator to floor intake height
+auto_intake manualClose = 1 intakeModeID = 2  Async? = 1 //open intake wide
+auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1 //start running intake wheels (IDK HOW TO DO THIS)
+auto_drive ySpeed = 1  distanceTarget = 25 maxTime = 3000 secondGear = 1 Async? = 1 //drive forward towards switch to grab cube
+auto_drive ySpeed = 1  distanceTarget = -15 maxTime = 3000 secondGear = 1 Async? = 1 //back up a bit after grabbing cube
+auto_elevator elevatorModeID = 1 elevatorStateID = 2 Async? = 0 //raise elevator to scale height 
+auto_drive xSpeed = 1 distanceTarget = 100 headingTarget = -180 maxTime = 300 secondGear = 1 Async? = 0 //turn left towards middle of field
+auto_intake rollerPower = -0.75 intakeModeID = 2  Async? = 1 //shoot cube
+auto_drive ySpeed = 1 distanceTarget = -20 maxTime = 500 Async? = 1
 reset_encoders 
