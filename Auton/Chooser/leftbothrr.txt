@@ -1,3 +1,4 @@
 ﻿dt_reset
-auto_drive ySpeed = .5 distanceTarget = 160 xSpeed = .5 headingTarget = 10
-auto_intake intakeMode = 1 rollerPower = -1 maxTime = 2000
+auto_drive xSpeed = .5 headingTarget = 180
+//wait maxTime = 1000
+//auto_intake intakeMode = 1 rollerPower = -1 maxTime = 2000
