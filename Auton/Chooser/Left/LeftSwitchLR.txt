@@ -1,6 +1,0 @@
-﻿//LeftSwitchLR
-//code to test the start of every auton. 
-dt_reset
-auto_elevator mode = semiauto command = ground maxTime = 500
-auto_intake mode = semiauto command = dropmid maxTime = 500
-auto_drive distanceTarget = 13 ySpeed = .5

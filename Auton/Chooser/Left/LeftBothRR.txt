@@ -1,6 +1,0 @@
-﻿//LeftBothRR
-dt_reset
-auto_drive ySpeed = .5 distanceTarget = 148 xSpeed = 0 headingTarget = 0 maxTime = 500
-auto_drive xSpeed = .4 headingTarget = 90
-wait maxTime = 500
-auto_intake rollerPower = -1
