@@ -1,4 +1,14 @@
-﻿dt_reset
-auto_drive xSpeed = .5 headingTarget = 180
+﻿reset_encoders
+auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = .01 maxTime = 3000 async = 0
+auto_drive ySpeed = 0
+//drive to switch
+reset_encoders
+auto_drive xSpeed = 0.5 ySpeed = 0 headingTarget = 90 maxTime = 1750 //turn to it
+reset_encoders
+wait 1000
+auto_drive ySpeed = .3 distanceTarget = 16 headingTarget = .01 maxTime = 6000 async = 0 
+intake rollerPower = -1 maxTime = 1000
+//auto_drive xSpeed = .6 headingTarget = 90 maxTime = 1000
+
 //wait maxTime = 1000
 //auto_intake intakeMode = 1 rollerPower = -1 maxTime = 2000
