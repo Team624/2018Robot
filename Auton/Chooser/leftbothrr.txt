@@ -1,14 +1,113 @@
-﻿reset_encoders
-auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = .01 maxTime = 3000 async = 0
-auto_drive ySpeed = 0
-//drive to switch
-reset_encoders
-auto_drive xSpeed = 0.5 ySpeed = 0 headingTarget = 90 maxTime = 1750 //turn to it
-reset_encoders
-wait 1000
-auto_drive ySpeed = .3 distanceTarget = 16 headingTarget = .01 maxTime = 6000 async = 0 
-intake rollerPower = -1 maxTime = 1000
-//auto_drive xSpeed = .6 headingTarget = 90 maxTime = 1000
+﻿//Center Switch R
+dt_reset 
+auto_drive ySpeed = .5 distanceTarget = 40 headingTarget = -45 xSpeed = 0.3 async = no maxTime = 2000
+dt_reset
+auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+auto_drive xSpeed = .5 headingTarget = 1 ySpeed = .01 distanceTarget = 5 maxTime = 300
+auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+dt_reset
+wait maxTime = 1000
+auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+wait maxTime = 1000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+dt_reset
+auto_drive ySpeed = -.5 distanceTarget = -10 headingTarget = 0 maxTime = 1000 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+dt_reset
+//auto_drive xSpeed = .5 headingTarget = 45 maxTime = 1000 async = no 
 
+
+
+
+
+
+
+
+
+
+// Right Scale RR
+//dt_reset
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1500
+//auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = 1 maxTime = 2000
+//auto_drive ySpeed = 1 distanceTarget = 205 headingTarget = 0.01 maxTime = 6000 async = yes 
+//auto_elevator elevatorCommand = idle maxTime = 100
+//auto_drive ySpeed = 0 distanceTarget = 0 async = no
+//auto_drive headingTarget = 55 async = yes
+//wait maxTime = 3000
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 3000 
+
+
+
+//Right Switch RR
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = 0.01 maxTime = 10000 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = 90 maxTime = 100000 async = yes
+//auto_elevator elevatorMode = semiauto elevatorCommand = mid maxTime = 3000 
+//auto_drive ySpeed = .5 distanceTarget = 10 maxTime = 1000 async = no
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//auto_intake intakeCommand = outtake maxTime = 1000
+
+
+
+//Right Both RR
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = 0.01 maxTime = 10000 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = 90 maxTime = 100000 async = yes
+//auto_elevator elevatorMode = semiauto elevatorCommand = mid maxTime = 3000 
+//auto_drive ySpeed = .5 distanceTarget = 10 maxTime = 1000 async = no
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//auto_intake intakeCommand = outtake maxTime = 1000
+//auto_drive ySpeed = -.5 distanceTarget = -3 maxTime = 10000 
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = -90 maxTime = 100000 async = yes
+//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = 0.01 maxTime = 10000 async = no
+//auto_drive headingTarget = 90 maxTime = 100000 async = yes
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//wait maxTime = 1000 //works
+//auto_drive ySpeed = -.5 distanceTarget = -1 headingTarget = 0 maxTime = 10000 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_elevator elevatorMode = semiauto elevatorCommand = scale maxTime = 3000 scaleHigh = 1 
+///wait maxTime = 2000
+///wait maxTime = 1000 / not tested
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 3000 
+
+
+//Right Both RL
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = 0.01 maxTime = 10000 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = 90 maxTime = 100000 async = yes
+//auto_elevator elevatorMode = semiauto elevatorCommand = mid maxTime = 3000 
+//auto_drive ySpeed = .5 distanceTarget = 10 maxTime = 1000 async = no
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//auto_intake intakeCommand = outtake maxTime = 1000
+//auto_drive ySpeed = -.5 distanceTarget = -1 headingTarget = 0 maxTime = 10000 async = no
+
+
+
+
+//dt_reset
+//auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = .5 headingTarget = 90 maxTime = 3000
+//auto_drive xSpeed = 0.5 ySpeed = 0 distanceTarget = 0 headingTarget = 90 maxTime = 2000 // turn to the scale 
+//auto_drive xSpeed = 0 headingTarget = 0 distanceTarget = 0
+//dt_reset
 //wait maxTime = 1000
-//auto_intake intakeMode = 1 rollerPower = -1 maxTime = 2000
+//auto_elevator elevatorMode = manual elevatorPower = 1 maxTime = 2000
+//auto_intake rollerPower = 0 intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//wait maxTime = 1000
+//auto_intake rollerPower = -1 maxTime = 1000
+
+
+
+// Right Switch Rx
+//reset_encoders
+//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = .01 maxTime = 3000 async = no
+//auto_drive ySpeed = 0 // why this?
+//reset_encoders
+//auto_drive xSpeed = 0.5 ySpeed = 0 headingTarget = 90 maxTime = 1750 //turn to it
+//reset_encoders
+//wait maxTime = 1000
+//auto_drive ySpeed = .3 distanceTarget = 16 headingTarget = .01 maxTime = 6000 async = no 
+//intake rollerPower = -1 maxTime = 1000
