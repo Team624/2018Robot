@@ -1,57 +1,136 @@
-﻿//Center Switch R
-dt_reset 
-auto_drive ySpeed = .3 distanceTarget = 30 headingTarget = -45 xSpeed = 0.4 async = no maxTime = 2000 
+﻿//Right Scale L
 dt_reset
-auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
-auto_drive xSpeed = 0.5 headingTarget = 1 ySpeed = .01 distanceTarget = 5 maxTime = 300
-auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+auto_drive ySpeed = 1 distanceTarget = 165 headingTarget = 0.01 maxTime = 3400 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 
 dt_reset
-
-wait maxTime = 1000
-auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
-wait maxTime = 1000
-
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+auto_drive headingTarget = 113 maxTime = 2000 async = no
+auto_drive headingTarget = 113
 dt_reset
-wait maxTime = 1000
-auto_drive ySpeed = -.25 distanceTarget = -1 headingTarget = 0 xSpeed = 0 maxTime = 500 async = no
+auto_drive ySpeed = .6 distanceTarget = 50 maxTime = 1250 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 maxTime = 100
+wait maxTime = 2000
+auto_drive headingTarget = -30 maxTime = 2000 async = no
 dt_reset
-auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+auto_drive ySpeed = 0 distanceTarget = 0 maxTime = 100
+wait maxTime = 100
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+//wait maxTime = 100
+//auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 1000
+//auto_elevator elevatorMode = semiauto elevatorCommand = idle scaleHigh = no maxTime = 100
+wait maxTime = 100
+auto_drive ySpeed = 0.2 distanceTarget = 5 maxTime = 500
 
-
-//SECOND ATTEMPT
-
-
-
-
-
-
-
-
-
-
-// Right Scale RR
 //dt_reset
-//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1500
-//auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = 1 maxTime = 2000
-//auto_drive ySpeed = 1 distanceTarget = 205 headingTarget = 0.01 maxTime = 6000 async = yes 
-//auto_elevator elevatorCommand = idle maxTime = 100
-//auto_drive ySpeed = 0 distanceTarget = 0 async = no
-//auto_drive headingTarget = 55 async = yes
-//wait maxTime = 3000
-//auto_intake intakeMode = manual rollerPower = -1 maxTime = 3000 
+//auto_drive ySpeed = .2 distanceTarget = 1 maxTime = 100 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
 
 
 
-//Right Switch RR
+
+
+
+
+
+
+
+
+
+
+//Right Switch L
 //dt_reset
-//auto_drive ySpeed = 1 distanceTarget = 130 headingTarget = 0.01 maxTime = 10000 async = no
+//auto_drive ySpeed = 1 distanceTarget = 165 headingTarget = 0.01 maxTime = 3400 async = no
 //auto_drive ySpeed = 0 distanceTarget = 0 
-//auto_drive headingTarget = 90 maxTime = 100000 async = yes
-//auto_elevator elevatorMode = semiauto elevatorCommand = mid maxTime = 3000 
-//auto_drive ySpeed = .5 distanceTarget = 10 maxTime = 1000 async = no
-//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
-//auto_intake intakeCommand = outtake maxTime = 1000
+//auto_drive headingTarget = 113 maxTime = 2000 async = no
+//auto_drive headingTarget = 113 
+//dt_reset
+//auto_drive ySpeed = .6 distanceTarget = 37 maxTime = 850 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 maxTime = 100
+//wait maxTime = 2000
+//auto_drive headingTarget = 200 maxTime = 2000 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//dt_reset
+//auto_drive ySpeed = .2 distanceTarget = 1 maxTime = 100 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+
+
+
+
+
+
+
+
+
+
+
+//Right Switch R
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 105 headingTarget = 0.01 maxTime = 1250 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = 95 maxTime = 2000 async = no
+//auto_drive headingTarget = 95 
+//dt_reset
+//auto_drive ySpeed = .2 distanceTarget = 2 maxTime = 250 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+
+
+
+
+
+
+
+
+//Center Switch L
+//dt_reset 
+//auto_drive ySpeed = .3 distanceTarget = 20 headingTarget = 93 xSpeed = 0.4 async = no maxTime = 750
+//dt_reset
+//auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+//auto_drive xSpeed = 0.5 headingTarget = -1 ySpeed = .01 distanceTarget = 3 maxTime = 300
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//dt_reset
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//wait maxTime = 2000
+///auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//dt_reset
+//wait maxTime = 1000
+//auto_drive ySpeed = -.25 distanceTarget = -1 headingTarget = 0 xSpeed = 0 maxTime = 500 async = no
+//dt_reset
+//auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+
+
+
+
+
+
+//Center Switch R
+//dt_reset 
+//auto_drive ySpeed = .3 distanceTarget = 20 headingTarget = -48 xSpeed = 0.4 async = no maxTime = 500  
+//dt_reset
+//auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+//auto_drive xSpeed = 0.5 headingTarget = 1 ySpeed = .01 distanceTarget = 2  maxTime = 300
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//dt_reset
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//wait maxTime = 2000
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
 
 
 
