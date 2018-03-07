@@ -1,10 +1,24 @@
-﻿// Right Scale RR
+﻿// Right Scale RR TESTED 2 TIMES
 dt_reset
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1500
-auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = 1 maxTime = 2000
-auto_drive ySpeed = 1 distanceTarget = 205 headingTarget = 0.01 maxTime = 6000 async = yes 
-auto_elevator elevatorCommand = idle maxTime = 100
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1500
+//auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = 1 maxTime = 2000
+auto_drive ySpeed = 1 distanceTarget = 205 headingTarget = 0.05 maxTime = 1500 async = no 
+//auto_elevator elevatorCommand = idle maxTime = 100
 auto_drive ySpeed = 0 distanceTarget = 0 async = no
-auto_drive headingTarget = 55 async = yes
-wait maxTime = 3000
-auto_intake intakeMode = manual rollerPower = -1 maxTime = 3000 
+dt_reset
+auto_intake intakeMode = manual manualAngle = .4 maxTime = 1000
+auto_intake intakeMode = manual manualAngle = 0 maxTime = 100
+wait maxTime = 1000
+auto_drive headingTarget = 87 xSpeed = .5 maxTime = 2000 async = no
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 2000
+wait maxTime= 200
+//auto_drive ySpeed = .2 distanceTarget = 2 maxTime = 250 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+dt_reset
+wait maxTime = 250
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+wait maxTime = 200
+auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+wait maxTime = 200
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+

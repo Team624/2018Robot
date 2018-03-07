@@ -1,1 +1,41 @@
-﻿
+﻿//Left Switch L TESTED 2 TIMES
+dt_reset
+auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1000
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+auto_intake intakeMode = semiauto intakeCommand = idle maxTime = 100
+auto_elevator elevatorMode = semiauto elevatorCommand = idle maxTime = 100
+wait maxTime= 1000
+auto_drive ySpeed = 1 distanceTarget = 109 headingTarget = 0.01 maxTime = 1400 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 
+auto_drive headingTarget = -97 maxTime = 2000 async = no
+//auto_drive headingTarget = 95 
+dt_reset
+auto_drive ySpeed = .2 distanceTarget = 2 maxTime = 250 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+dt_reset
+wait maxTime = 1000
+auto_intake intakeMode = manual manualOpen = yes maxTime = 2000
+wait maxTime = 1000
+
+
+
+
+
+
+
+
+
+
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 105 headingTarget = 0.01 maxTime = 1250 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 
+//auto_drive headingTarget = -95 maxTime = 2000 async = no
+//auto_drive headingTarget = -95 
+//dt_reset
+//auto_drive ySpeed = .2 distanceTarget = 2 maxTime = 250 async = no
+//auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+//wait maxTime = 1000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
