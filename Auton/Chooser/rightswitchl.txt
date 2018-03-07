@@ -1,0 +1,20 @@
+﻿//Right Switch L
+dt_reset
+auto_drive ySpeed = 1 distanceTarget = 165 headingTarget = 0.01 maxTime = 3400 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 
+dt_reset
+auto_drive headingTarget = 113 maxTime = 2000 async = no
+//auto_drive headingTarget = 113
+dt_reset
+auto_drive ySpeed = .6 distanceTarget = 50 maxTime = 1250 async = no
+auto_drive ySpeed = 0 distanceTarget = 0 maxTime = 100
+wait maxTime = 1000
+auto_drive headingTarget = 190 maxTime = 1000
+wait maxTime = 1500
+auto_drive distanceTarget = 5 ySpeed = .2 maxTime = 500
+auto_drive distanceTarget = 0 ySpeed = 0 maxTime = 100
+dt_reset
+wait maxTime = 500
+auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+

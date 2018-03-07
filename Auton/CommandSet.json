@@ -1,24 +1,76 @@
 [
-		{
+	{
 		"name":"wait",
 		"id":0,
-		"desc":"wait for specified time",
+		"desc":"wait for the specified amount of time",
 		"subs": [
-				{"name":"maxTime", "id":0, "desc":"wait duration (ms). (0 = forever)"}
+				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"}
 		]
 		
 	},
 	
 	{
-		
-	}
-
-
-
-
-
-
-
-
-
+		"name":"auto_drive",
+		"id":1,
+		"desc":"drive for specified distance",
+		"subs": [
+				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"distanceTarget","id":1,"desc":"specified distance to drive straight"},
+				{"name":"headingTarget","id":2,"desc":"specified heading to turn to"},
+				{"name":"ySpeed","id":3,"desc":"straight forward speed"},
+				{"name":"xSpeed","id":4,"desc":"turning speed"},
+				{"name":"async","id":5,"desc":"asynchronized? (no = 0; yes = 1)"},
+				{"name":"secondGear","id":6,"desc":"shift into second gear? (no = 0; yes = 1)"},
+		]
+	},
+	
+	{
+		"name":"auto_intake",
+		"id":2,
+		"desc":"auto intake",
+		"subs": [
+				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"intakeMode","id":1,"desc":"choose intake mode (semiauto = 0, manual = 1)" },
+				{"name":"intakeCommand","id":2,"desc":"choose intake command (idle = 0, dropmid = 1, outtake = 2, intake = 3)"},
+				{"name":"rollerPower","id":3,"desc":"specify roller speed"},
+				{"name":"manualOpen","id":4,"desc":"manually open the intake claws"},
+				{"name":"manualAngle","id":5,"desc":"output a motor value to the intake curl motor from 0 to 1"},
+		]
+	},
+	
+	{
+		"name":"auto_elevator",
+		"id":3,
+		"desc":"uhhhhhhh auto elevator",
+		"subs": [
+				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"elevatorMode","id":1,"desc":"choose elevator mode (semiauto = 0, manual = 1)"},
+				{"name":"elevatorCommand","id":2,"desc":"choose elevator command (idle = 0, ground = 1, switch = 2, scale = 3)"},
+				{"name":"elevatorPower","id":3,"desc":"specify power to motor from 0 to 1"},
+				{"name":"scaleHigh","id":4,"desc":"if you want the scale high height in semi-auto mode"},
+		]
+	},
+	
+	{
+		"name":"dt_reset",
+		"id":4,
+		"desc":"reset the dt encoders",
+		"subs": [ 
+		]
+	},
+	
+	{"alias":"no", "represents":0},
+	{"alias":"yes", "represents":1},
+	{"alias":"forever", "represents":0},
+	{"alias":"semiauto", "represents":0},
+	{"alias":"manual","represents":1},
+	{"alias":"idle","represents":0},
+	{"alias":"dropmid","represents":1},
+	{"alias":"outtake","represents":2},
+	{"alias":"intake","represents":3},
+	{"alias":"ground","represents":1},
+	{"alias":"switch","represents":2},
+	{"alias":"scale","represents":3},
+	
+	
 ]
