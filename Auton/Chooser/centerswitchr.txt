@@ -1,11 +1,11 @@
 ﻿//Center Switch R - TESTED 2 TIMES
 dt_reset 
 auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1000
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 2000
 auto_intake intakeMode = semiauto intakeCommand = idle maxTime = 100
 auto_elevator elevatorMode = semiauto elevatorCommand = idle maxTime = 100
 wait maxTime= 1000
-auto_drive ySpeed = .3 distanceTarget = 20 headingTarget = -60 xSpeed = 0.4 async = no maxTime = 750
+auto_drive ySpeed = .4 distanceTarget = 40 headingTarget = -35 xSpeed = 0.4 async = no maxTime = 2500
 dt_reset
 auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
 auto_drive xSpeed = 0.5 headingTarget = 1 ySpeed = .01 distanceTarget = 5 maxTime = 300
