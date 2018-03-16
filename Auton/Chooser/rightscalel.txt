@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿dt_reset
 auto_drive ySpeed = 1 distanceTarget = 190 headingTarget = 0.01 maxTime = 2000 async = no
 auto_drive ySpeed = 0 distanceTarget = 0 async = no
@@ -14,3 +15,6 @@ wait maxTime = 500
 //auto_drive ySpeed = 0 distanceTarget = 0 async = no
 wait maxTime = 500
 dt_reset 
+=======
+﻿
+>>>>>>> master
