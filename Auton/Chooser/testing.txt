@@ -1,3 +1,3 @@
 ﻿//use this script to test anything
-auto_drive ySpeed = .5 distanceTarget = 30 maxTime = 1000 async = no
+auto_drive ySpeed = .5 distanceTarget = 12 maxTime = 1000 async = no
 auto_drive ySpeed = 0 distanceTarget = 0 maxTime= 100 async = no
