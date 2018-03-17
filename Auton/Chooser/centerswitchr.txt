@@ -1,35 +1,27 @@
-﻿//Center Switch R - TESTED 2 TIMES
-dt_reset 
-auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1000
-<<<<<<< HEAD
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 2000
-auto_intake intakeMode = semiauto intakeCommand = idle maxTime = 100
-auto_elevator elevatorMode = semiauto elevatorCommand = idle maxTime = 100
-wait maxTime= 1000
-auto_drive ySpeed = .4 distanceTarget = 40 headingTarget = -35 xSpeed = 0.4 async = no maxTime = 2500
-=======
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1000
-auto_intake intakeMode = semiauto intakeCommand = idle maxTime = 100
-auto_elevator elevatorMode = semiauto elevatorCommand = idle maxTime = 100
-wait maxTime= 1000
-auto_drive ySpeed = .3 distanceTarget = 20 headingTarget = -60 xSpeed = 0.4 async = no maxTime = 750
->>>>>>> master
-dt_reset
-auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
-auto_drive xSpeed = 0.5 headingTarget = 1 ySpeed = .01 distanceTarget = 5 maxTime = 300
-auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 0 maxTime = 100
-dt_reset
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-wait maxTime = 2000
-auto_intake intakeMode = manual rollerPower = -.6 maxTime = 2000
-wait maxTime = 1000
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-//wait maxTime = 1000
-//auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+﻿//Center Switch R - TESTED 2 TIMES 
+//dt_reset 
+//auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1000
+//auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 2000
+//auto_intake intakeMode = semiauto intakeCommand = idle maxTime = 100
+//auto_elevator elevatorMode = semiauto elevatorCommand = idle maxTime = 100
+//wait maxTime= 100
+//auto_drive ySpeed = .4 distanceTarget = 112 headingTarget = -20 xSpeed = 0.4 async = no maxTime = 25000
+//dt_reset
+//auto_drive distanceTarget = 12 ySpeed = .3 xSpeed = 0.5 headingTarget = 0 maxTime = 10000
+//dt_reset
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//wait maxTime = 2000
+//auto_intake intakeMode = manual rollerPower = -.6 maxTime = 2000
 //wait maxTime = 1000
 //auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-//dt_reset
-//wait maxTime = 1000
-//auto_drive ySpeed = -.25 distanceTarget = -1 headingTarget = 0 xSpeed = 0 maxTime = 500 async = no
-//dt_reset
-//auto_drive ySpeed = 0 distanceTarget = 0 xSpeed = 0 headingTarget = 0 maxTime = 100
+dt_reset 
+auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1
+auto_drive ySpeed = .4 distanceTarget = 110 headingTarget = -21 xSpeed = 0.4 async = no maxTime = 6000
+dt_reset
+auto_drive distanceTarget = 3 ySpeed = .15 xSpeed = 0.1 headingTarget = 4 maxTime = 5000 async = yes
+wait maxTime = 50
+auto_intake intakeMode = manual rollerPower = -.6 maxTime = 1
+wait maxTime = 3000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+
