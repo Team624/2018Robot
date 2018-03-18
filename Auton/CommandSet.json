@@ -58,6 +58,17 @@
 		"subs": [ 
 		]
 	},
+	{
+		"name":"waitFor",
+		"id":4,
+		"desc":"reset the dt encoders",
+		"subs": [ 
+				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
+				{"name":"condition","id":8,"desc":"wait condition"},
+				{"name":"distanceTarget","id":1,"desc":"specified distance to drive straight"},
+		]
+	},
+	
 	
 	{"alias":"no", "represents":0},
 	{"alias":"yes", "represents":1},
