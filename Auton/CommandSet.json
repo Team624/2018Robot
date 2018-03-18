@@ -31,10 +31,11 @@
 		"subs": [
 				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
 				{"name":"intakeMode","id":1,"desc":"choose intake mode (semiauto = 0, manual = 1)" },
-				{"name":"intakeCommand","id":2,"desc":"choose intake command (idle = 0, dropmid = 1, outtake = 2, intake = 3)"},
+				{"name":"intakeCommand","id":2,"desc":"choose intake command (idle = 0, dropmid = 1, outtake = 2, intake = 3, overrideangle = 4)"},
 				{"name":"rollerPower","id":3,"desc":"specify roller speed"},
 				{"name":"manualOpen","id":4,"desc":"manually open the intake claws"},
 				{"name":"manualAngle","id":5,"desc":"output a motor value to the intake curl motor from 0 to 1"},
+				{"name":"overrideAngle","id":6,"desc":"manually input an intake angle in semiauto mode"},
 		]
 	},
 	
@@ -82,6 +83,7 @@
 	{"alias":"ground","represents":1},
 	{"alias":"switch","represents":2},
 	{"alias":"scale","represents":3},
+	{"alias":"overrideangle", "represents":4},
 	
 	
 ]
