@@ -1,4 +1,4 @@
-﻿//Right Switch R TESTED 2 TIMES
+﻿//Right Switch R TESTED 2 TIMES (final)
 dt_reset 
 auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
 auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1 async = yes
