@@ -84,6 +84,7 @@
 	{"alias":"switch","represents":2},
 	{"alias":"scale","represents":3},
 	{"alias":"overrideangle", "represents":4},
+	{"alias":"dtpass_dist", "represents":1}
 	
 	
 ]
