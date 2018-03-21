@@ -49,6 +49,7 @@
 				{"name":"elevatorCommand","id":2,"desc":"choose elevator command (idle = 0, ground = 1, switch = 2, scale = 3)"},
 				{"name":"elevatorPower","id":3,"desc":"specify power to motor from 0 to 1"},
 				{"name":"scaleHigh","id":4,"desc":"if you want the scale high height in semi-auto mode"},
+				{"name":"async","id":5,"desc":"asynchronized? (no = 0; yes = 1)"}
 		]
 	},
 	
@@ -62,7 +63,7 @@
 	{
 		"name":"waitFor",
 		"id":5,
-		"desc":"reset the dt encoders",
+		"desc":"wait for a condition",
 		"subs": [ 
 				{"name":"maxTime","id":0,"desc":"wait duration (ms). (0 = forever)"},
 				{"name":"distanceTarget","id":1,"desc":"specified distance to drive straight"},

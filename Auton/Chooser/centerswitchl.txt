@@ -9,4 +9,8 @@ wait maxTime = 50
 auto_intake intakeMode = manual rollerPower = -.6 maxTime = 1
 wait maxTime = 3000
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-
+//exchange
+dt_reset 
+auto_drive ySpeed = .4 distanceTarget = - headingTarget = 24 xSpeed = 0.4 async = yes maxTime = 6000
+auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 1 async = yes
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1

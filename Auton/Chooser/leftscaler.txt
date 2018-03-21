@@ -1,22 +1,32 @@
 ﻿//works in 14.0 seconds
+//BELOW IS BEING TESTED WITH WAIT FOR
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 0 maxTime = 6000  async = yes
+//waitFor condition = dtpass_dist distanceTarget = 220 maxTime = 6000
+//auto_drive headingTarget = -90 xSpeed = .5 maxTime = 500 async = no
+//dt_reset
+//auto_drive ySpeed = 1 distanceTarget = 187 headingTarget = -90 maxTime = 6000 async = yes
+//waitFor condition = dtpass_dist distanceTarget = 187 maxTime = 6000
+//auto_drive headingTarget = 15.05 xSpeed = .5 maxTime = 500 async = no
+//dt_reset
+//auto_drive ySpeed = .3 distanceTarget = 24 headingTarget = 15.05 maxTime = 500 //or 15.05
+//auto_intake intakeMode = semiauto manualAngle = .4 maxTime = 1000 
+//auto_intake intakeMode = manual manualAngle = 0 maxTime = 100
+//auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 2000
+//auto_drive ySpeed = .3 distanceTarget = 27 headingTarget = 15.05 maxTime = 500 async = no
+//auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 2000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//auto_drive distanceTarget = 0 ySpeed = 0 maxTime = 0
+//THIS WORKS
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 0 maxTime = 6000  async = yes
-waitFor condition = dtpass_dist distanceTarget = 220 maxTime = 6000
+auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 0 maxTime = 6000
 auto_drive headingTarget = -90 xSpeed = .5 maxTime = 500 async = no
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 187 headingTarget = -90 maxTime = 6000 async = yes
-waitFor condition = dtpass_dist distanceTarget = 187 maxTime = 6000
-auto_drive headingTarget = 15.05 xSpeed = .5 maxTime = 500 async = no
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 45 maxTime = 100
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100 async = yes
+auto_drive ySpeed = 1 distanceTarget = 187 headingTarget = -90 maxTime = 6000 
+auto_drive headingTarget = 25.05 xSpeed = .1 maxTime = 1000 
 dt_reset
-auto_drive ySpeed = .3 distanceTarget = 24 headingTarget = 10 maxTime = 500 //or 15.05
-auto_intake intakeMode = semiauto manualAngle = .4 maxTime = 1000 
-auto_intake intakeMode = manual manualAngle = 0 maxTime = 100
-auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 2000
-auto_drive ySpeed = .3 distanceTarget = 27 headingTarget = 10 maxTime = 500 async = no
-//dt_reset
-//wait maxTime = 1000
-//wait maxTime = 200
+auto_drive ySpeed = .3 distanceTarget = 32 headingTarget = 25.05 maxTime = 500 async = no
 auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 2000
-//wait maxTime = 200
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-auto_drive distanceTarget = 0 ySpeed = 0 maxTime = 0
