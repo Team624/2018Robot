@@ -22,10 +22,10 @@ dt_reset
 auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 0 maxTime = 6000
 auto_drive headingTarget = -90 xSpeed = .5 maxTime = 500 async = no
 dt_reset
+auto_drive ySpeed = 1 distanceTarget = 187 headingTarget = -90 maxTime = 6000
+auto_drive headingTarget = 25.05 xSpeed = .1 maxTime = 1000 async = yes
 auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 45 maxTime = 100
-auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100 async = yes
-auto_drive ySpeed = 1 distanceTarget = 187 headingTarget = -90 maxTime = 6000 
-auto_drive headingTarget = 25.05 xSpeed = .1 maxTime = 1000 
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100
 dt_reset
 auto_drive ySpeed = .3 distanceTarget = 32 headingTarget = 25.05 maxTime = 500 async = no
 auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 2000
