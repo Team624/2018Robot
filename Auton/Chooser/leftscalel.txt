@@ -1,6 +1,7 @@
 ﻿// Left Scale L TESTED 3 TIMES
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 250 headingTarget = 0 maxTime = 6000  
+auto_drive ySpeed = 1 distanceTarget = 250 headingTarget = 0 maxTime = 6000
+//waitFor condition = 4 maxTime = 1000 NOT CONDITION NEED TO ADD TO COMMAND SET
 auto_drive headingTarget = -30 xSpeed = .5 maxTime = 2000 async = yes
 auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 45 maxTime = 100
 auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100
