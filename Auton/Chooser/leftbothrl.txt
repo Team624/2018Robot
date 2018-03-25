@@ -1,1 +1,21 @@
-﻿
+﻿// Left Scale L TESTED 3 TIMES TEST TWO CUBE
+dt_reset
+auto_drive ySpeed = 1 distanceTarget = 250 headingTarget = 0 maxTime = 6000
+//waitFor condition = 4 maxTime = 1000 NOT CONDITION NEED TO ADD TO COMMAND SET
+auto_drive headingTarget = -30 xSpeed = .5 maxTime = 2000 async = yes
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 90 maxTime = 100
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100
+auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 2000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+//second cube
+auto_drive headingTarget = -120 xSpeed = .5 maxTime = 2000 async = yes
+auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 100
+auto_drive ySpeed = 1 distanceTarget = 65 headingTarget = -140 maxTime = 6000 async = yes
+auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 2000
+auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 1
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 500
+dt_reset
+auto_drive ySpeed = 1 distanceTarget = -65 headingTarget = -140 maxTime = 6000 async = no
+auto_drive headingTarget = -30 xSpeed = .5 maxTime = 2000 async = no
+auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 2000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100

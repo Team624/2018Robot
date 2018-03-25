@@ -1020,6 +1020,15 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Robot Code/Framework/Vision Processing.vi"/>
+			<Item Name="CTRE_Phoenix_MotorControl_ControlMode.ctl" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_ControlMode.ctl"/>
+			<Item Name="CTRE_Phoenix_MotorControl_RefNumRegistryGet.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_RefNumRegistryGet.vi"/>
+			<Item Name="CTRE_Phoenix_MotorControl_Set.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_Set.vi"/>
+			<Item Name="CTRE_Phoenix_MotorControl_DevRefData.ctl" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_DevRefData.ctl"/>
+			<Item Name="CTRE_Phoenix_MotorControl_UpdateRefNum.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_UpdateRefNum.vi"/>
+			<Item Name="CTRE_Phoenix_MotorControl_RefNumRegistrySet.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_RefNumRegistrySet.vi"/>
+			<Item Name="CTRE_ErrorHandle.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Error/CTRE_ErrorHandle.vi"/>
+			<Item Name="DriverLib.ctl" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Controls/DriverLib.ctl"/>
+			<Item Name="CTRE_Phoenix_MotorControl_GetDevRefData.vi" Type="VI" URL="../../../../../../Public/Documents/Cross The Road Electronics/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_GetDevRefData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
