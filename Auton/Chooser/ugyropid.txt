@@ -1,0 +1,2 @@
+﻿// Gyro PID testing 
+auto_drive headingTarget = 90 xSpeed = .3 maxTime = 60000

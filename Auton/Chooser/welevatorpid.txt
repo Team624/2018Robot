@@ -1,0 +1,2 @@
+﻿//Elevator PID Testing
+auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 10000
