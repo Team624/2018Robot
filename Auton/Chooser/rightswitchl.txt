@@ -1,4 +1,4 @@
 ﻿//Right Switch L TESTED 2 TIMES(Final)
 //Just baseline in order to not crash into scale bot from mid
 dt_reset 
-auto_drive ySpeed = .4 distanceTarget = 145 headingTarget = 0 async = no maxTime = 6000
+auto_drive ySpeed = 1 distanceTarget = 145 headingTarget = 0 async = no maxTime = 6000
