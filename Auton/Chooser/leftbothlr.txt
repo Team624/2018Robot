@@ -1,14 +1,15 @@
 ﻿//Left to right Scale then pickup second cube and wait
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 0 maxTime = 6000
+auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = -3 maxTime = 6000
 auto_drive headingTarget = -90 xSpeed = .5 maxTime = 250 async = no
 dt_reset
 //auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 45 maxTime = 100
 //auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 100
 auto_drive ySpeed = 1 distanceTarget = 201 headingTarget = -90 maxTime = 3000
 auto_drive headingTarget = 22.05 xSpeed = .1 maxTime = 1000 async = yes
-auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 90 maxTime = 100
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 80 maxTime = 100
 auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 0 async = no
+wait maxTime = 250
 dt_reset
 auto_drive ySpeed = .2 distanceTarget = 28 headingTarget = 22.05 maxTime = 250 async = no
 //auto_intake intakeMode = manual manualOpen = 1 rollerPower = -0.6 maxTime = 1000
@@ -17,13 +18,13 @@ auto_intake intakeMode = manual rollerPower = -0.35 maxTime = 1000
 wait maxTime = 150
 dt_reset
 //takes ~10 seconds all of the max times on the ones below will vary
-auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 110 maxTime = 1
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 100 maxTime = 1
 auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 2000 async = yes
 auto_drive headingTarget = 175 xSpeed = .2 maxTime = 1500 async = no
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 50 headingTarget = 180 maxTime = 2000 async = yes
-auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 1250
+auto_drive ySpeed = 1 distanceTarget = 54 headingTarget = 175 maxTime = 2000 async = yes
+auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 1750
 //waitFor condition = 3 maxTime = 1000
 auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 1
 dt_reset
-auto_drive ySpeed = .5 distanceTarget = -15 headingTarget = 175 maxTime = 500
+auto_drive ySpeed = .5 distanceTarget = -15 headingTarget = 175 maxTime = 500 

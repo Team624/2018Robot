@@ -1,7 +1,6 @@
 ﻿// Right Scale R TESTED - TIMES TWO CUBE
 dt_reset
 auto_drive ySpeed = 1 distanceTarget = 250 headingTarget = 1 maxTime = 6000
-//waitFor condition = 4 maxTime = 1000 NOT CONDITION NEED TO ADD TO COMMAND SET
 auto_drive headingTarget = 30 xSpeed = .5 maxTime = 500 async = yes
 auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 80 maxTime = 100
 auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 0
