@@ -8,7 +8,7 @@ auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes ma
 auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 500
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
 //second cube
-auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 95 maxTime = 1
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 110 maxTime = 1
 auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 750
 auto_drive headingTarget = -160 xSpeed = .5 maxTime = 500
 dt_reset

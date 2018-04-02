@@ -1,1 +1,12 @@
-﻿
+﻿//SWITCH R
+dt_reset 
+auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
+auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1 async = yes
+auto_drive ySpeed = .4 distanceTarget = 145 headingTarget = 0 async = no maxTime = 6000
+auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 90 async = no maxTime = 3000
+dt_reset
+auto_drive ySpeed = .4 distanceTarget = 12 maxTime = 1000
+wait maxTime = 50
+auto_intake intakeMode = manual rollerPower = -.6 maxTime = 1
+wait maxTime = 3000
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 1

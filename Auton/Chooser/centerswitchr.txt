@@ -6,7 +6,7 @@ auto_drive ySpeed = .4 distanceTarget = 110 headingTarget = -21 xSpeed = 0.4 asy
 dt_reset
 auto_drive distanceTarget = 3 ySpeed = .15 xSpeed = 0.1 headingTarget = 4 maxTime = 5000 async = yes
 wait maxTime = 50
-auto_intake intakeMode = manual rollerPower = -.6 maxTime = 1
+auto_intake intakeMode = manual rollerPower = -.65 maxTime = 1
 wait maxTime = 3000
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
 //dt_reset

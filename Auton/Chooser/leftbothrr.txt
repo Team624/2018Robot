@@ -21,6 +21,7 @@ dt_reset
 auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 100 maxTime = 1
 auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 2000 async = yes
 auto_drive headingTarget = 175 xSpeed = .2 maxTime = 1500 async = no
+wait maxTime = 500
 dt_reset
 auto_drive ySpeed = 1 distanceTarget = 54 headingTarget = 175 maxTime = 2000 async = yes
 auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 1750
