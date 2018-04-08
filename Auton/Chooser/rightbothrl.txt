@@ -1,12 +1,36 @@
-﻿//SWITCH R
+﻿//Center Switch R - TESTED 2 TIMES (Final)
 dt_reset 
+wait maxTime = 250
 auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 1 async = yes
-auto_drive ySpeed = .4 distanceTarget = 145 headingTarget = 0 async = no maxTime = 6000
-auto_drive ySpeed = 0 distanceTarget = 0 headingTarget = 90 async = no maxTime = 3000
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 80 maxTime = 100
+auto_drive ySpeed = .4 distanceTarget = 110 headingTarget = -21 xSpeed = 0.4 async = no maxTime = 3000
 dt_reset
-auto_drive ySpeed = .4 distanceTarget = 12 maxTime = 1000
+auto_drive distanceTarget = 3 ySpeed = .15 xSpeed = 0.1 headingTarget = 4 maxTime = 3000 async = yes
 wait maxTime = 50
-auto_intake intakeMode = manual rollerPower = -.6 maxTime = 1
-wait maxTime = 3000
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 1
+auto_intake intakeMode = manual rollerPower = -.65 maxTime = 1
+wait maxTime = 1500
+auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
+dt_reset
+auto_elevator elevatorMode = semiauto elevatorCommand = ground maxTime = 1 
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 95 maxTime = 1
+auto_drive ySpeed = .4 distanceTarget = -110 headingTarget = -25 xSpeed = 0.4 maxTime = 2000
+dt_reset
+auto_drive headingTarget = 5 xSpeed = .5 maxTime = 1500
+dt_reset
+auto_drive ySpeed = .4 distanceTarget = 50 headingTarget = 5 maxTime = 2500 async = yes
+auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 2500
+wait maxTime = 500
+auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 100
+dt_reset
+auto_drive ySpeed = .4 distanceTarget = -50 headingTarget = 1 maxTime = 1500  
+dt_reset 
+//
+//auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
+//auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 80 maxTime = 100
+//auto_drive ySpeed = .4 distanceTarget = 110 headingTarget = -21 xSpeed = 0.4 async = no maxTime = 5000
+//dt_reset
+//auto_drive distanceTarget = 3 ySpeed = .15 xSpeed = 0.1 headingTarget = 4 maxTime = 4500 async = yes
+//wait maxTime = 50
+//auto_intake intakeMode = manual rollerPower = -.65 maxTime = 1
+//wait maxTime = 3000
+//auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
