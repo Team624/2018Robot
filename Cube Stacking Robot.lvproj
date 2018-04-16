@@ -781,6 +781,9 @@
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="CTRE_Phoenix_MotorControl_NeutralMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_NeutralMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_SetNeutralMode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/CTRE_Phoenix_MotorControl_SetNeutralMode.vi"/>
+				<Item Name="WPI_Power Get PDP Voltage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Power/WPI_Power Get PDP Voltage.vi"/>
+				<Item Name="WPI_Power Get PDP Currents.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Power/WPI_Power Get PDP Currents.vi"/>
+				<Item Name="WPI_CAN_PDPSend.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/PDP/WPI_CAN_PDPSend.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Sparkfun Atomic IMU.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/Sparkfun Atomic IMU/HAIOL/Sparkfun Atomic IMU.lvclass"/>
@@ -874,6 +877,8 @@
 			<Item Name="Manual not Manual.vi" Type="VI" URL="../Robot Code/Intake/Manual not Manual.vi"/>
 			<Item Name="Drivetrain Trapezoidal Control.vi" Type="VI" URL="../Robot Code/Motion Profiling/Drivetrain Trapezoidal Control.vi"/>
 			<Item Name="Autoshift Loop.vi" Type="VI" URL="../Robot Code/Drivetrain/Autoshift Loop.vi"/>
+			<Item Name="Drivetrain Trapezoidal Loop.vi" Type="VI" URL="../Robot Code/Motion Profiling/Drivetrain Trapezoidal Loop.vi"/>
+			<Item Name="Velocity In Range.vi" Type="VI" URL="../Robot Code/Motion Profiling/Velocity In Range.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
