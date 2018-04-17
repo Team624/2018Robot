@@ -1,3 +1,0 @@
-﻿//Elevator PID Testing
-auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1
-auto_intake intakeMode = semiauto intakeCommand = dropmid maxTime = 10000

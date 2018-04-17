@@ -1,0 +1,2 @@
+﻿dt_reset 
+auto_drive distanceTarget = 60 ySpeed = 1 maxTime = 100000
