@@ -1,4 +1,4 @@
-﻿//center two switch
+﻿//center switch left then right scale
 dt_reset 
 wait maxTime = 500
 auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
@@ -24,14 +24,17 @@ wait maxTime = 500
 auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 100
 //
 dt_reset
-auto_drive headingTarget = 90 xSpeed = .5 maxTime = 500
+auto_drive headingTarget = -90 xSpeed = .5 maxTime = 500
 dt_reset 
-auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
-auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 110 maxTime = 100
-auto_drive ySpeed = 1 distanceTarget = 50 headingTarget = 90 maxTime = 1000 
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 1 maxTime = 100
+auto_drive ySpeed = 1 distanceTarget = 144 headingTarget = -90 maxTime = 2000 
 dt_reset
-auto_drive headingTarget = -3 xSpeed = .5 maxTime = 500
+auto_drive headingTarget = 3 xSpeed = .5 maxTime = 500
 dt_reset
-auto_drive ySpeed = 1 distanceTarget = 35 headingTarget = -3 maxTime = 1000 secondGear = no 
+auto_drive ySpeed = 1 distanceTarget = 300 headingTarget = 3 maxTime = 6000 secondGear = yes async = yes
+wait maxTime = 500
+auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 65 maxTime = 100
+auto_elevator elevatorMode = semiauto elevatorCommand = scale scaleHigh = yes maxTime = 0
+auto_drive headingTarget = 85 xSpeed = .5 maxTime = 500 secondGear = no
 auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 500
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
