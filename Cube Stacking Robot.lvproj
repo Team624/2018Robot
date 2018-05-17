@@ -993,7 +993,6 @@
 			<Item Name="Elevator In Range.vi" Type="VI" URL="../Robot Code/Elevator/Elevator In Range.vi"/>
 			<Item Name="Semi Auto Elevator Loop.vi" Type="VI" URL="../Robot Code/Elevator/Semi Auto Elevator Loop.vi"/>
 			<Item Name="Limit Switch Saftey Handle.vi" Type="VI" URL="../Robot Code/Elevator/Limit Switch Saftey Handle.vi"/>
-			<Item Name="Slow Down Tolerance.vi" Type="VI" URL="../Robot Code/Elevator/Slow Down Tolerance.vi"/>
 			<Item Name="Elevator Encoder Read.vi" Type="VI" URL="../Robot Code/Elevator/Elevator Encoder Read.vi"/>
 			<Item Name="Intake Loop.vi" Type="VI" URL="../Robot Code/Intake/Intake Loop.vi"/>
 			<Item Name="Semi Auto Intake Mode.vi" Type="VI" URL="../Robot Code/Intake/Semi Auto Intake Mode.vi"/>

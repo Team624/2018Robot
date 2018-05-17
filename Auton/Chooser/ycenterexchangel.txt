@@ -1,4 +1,4 @@
-﻿//center switch left then left scale
+﻿//center switch left then exchange
 dt_reset 
 wait maxTime = 500
 auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 1 async = yes
@@ -26,29 +26,11 @@ auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 100
 dt_reset
 auto_drive headingTarget = 90 xSpeed = .5 maxTime = 500
 dt_reset 
-auto_drive ySpeed = 1 distanceTarget = 38 headingTarget = 90 maxTime = 1000 
+auto_drive ySpeed = 1 distanceTarget = 33 headingTarget = 90 maxTime = 1000 
 dt_reset
 auto_drive headingTarget = 180 xSpeed = .5 maxTime = 1000
 dt_reset
-auto_drive ySpeed = .5 distanceTarget = 52 headingTarget = 180 maxTime = 2000 secondGear = no 
-auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
+auto_drive ySpeed = .5 distanceTarget = 60 headingTarget = 180 maxTime = 1500 secondGear = no 
+auto_intake intakeMode = manual rollerPower = -0.6 maxTime = 500
 auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-dt_reset 
-auto_drive ySpeed = 1 distanceTarget = -55 headingTarget = 180 maxTime = 2000
-auto_drive headingTarget = -39 xSpeed = .5 maxTime = 1000
-dt_reset
-auto_drive ySpeed = .5 distanceTarget = 22 headingTarget = -39 maxTime = 2000 secondGear = no 
-auto_intake intakeMode = manual manualOpen = 1 rollerPower = 0.6 maxTime = 2000
-wait maxTime = 500
-auto_intake intakeMode = manual manualOpen = 0 rollerPower = 0.6 maxTime = 100
-dt_reset
-auto_drive ySpeed = .5 distanceTarget = -22 headingTarget = -39 maxTime = 2000 secondGear = no 
-auto_drive headingTarget = 180 xSpeed = .5 maxTime = 1000
-dt_reset
-auto_drive ySpeed = .5 distanceTarget = 55 headingTarget = 180 maxTime = 2000 secondGear = no 
-auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
-//55 back
-//134 headiing
-//22 forwARD
-//back 22
+///
