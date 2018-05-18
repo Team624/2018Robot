@@ -1025,6 +1025,7 @@
 			<Item Name="Autoshift Loop.vi" Type="VI" URL="../Robot Code/Drivetrain/Autoshift Loop.vi"/>
 			<Item Name="Drivetrain Trapezoidal Loop.vi" Type="VI" URL="../Robot Code/Motion Profiling/Drivetrain Trapezoidal Loop.vi"/>
 			<Item Name="Velocity In Range.vi" Type="VI" URL="../Robot Code/Motion Profiling/Velocity In Range.vi"/>
+			<Item Name="Teleop LED Control.vi" Type="VI" URL="../Robot Code/LEDs/Teleop LED Control.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
