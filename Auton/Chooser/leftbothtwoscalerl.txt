@@ -33,6 +33,3 @@ dt_reset
 auto_drive ySpeed = 1 distanceTarget = -76 headingTarget = -130 maxTime = 1200 async = no
 auto_drive headingTarget = -30 xSpeed = .5 maxTime = 1000 async = yes
 auto_intake intakeMode = semiauto intakeCommand = overrideangle overrideAngle = 35 maxTime = 100
-auto_elevator elevatorMode = semiauto elevatorCommand = switch maxTime = 0
-auto_intake intakeMode = manual rollerPower = -1 maxTime = 2000
-auto_intake intakeMode = manual rollerPower = 0 maxTime = 100
