@@ -1,0 +1,5 @@
+﻿dt_reset
+auto_drive ySpeed = 1 distanceTarget = 220 headingTarget = 3 maxTime = 6000 secondGear = yes
+auto_drive headingTarget = 90 xSpeed = .5 maxTime = 250 async = no secondGear = no
+dt_reset
+auto_drive ySpeed = 1 distanceTarget = 50 headingTarget = 90 maxTime = 3000
